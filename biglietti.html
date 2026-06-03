@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guida acquisto biglietti online – CO.TR.A.B.</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;color:#33414f;background:#f4f5f7;font-size:16px;line-height:1.6}
+a{color:#0079b8}
+.wrap{max-width:840px;margin:0 auto;padding:0 18px 70px}
+.hero{background:#002457;color:#fff;border-radius:0 0 20px 20px;padding:26px 26px 32px;position:relative;overflow:hidden;display:flex;align-items:center;gap:22px}
+.hero-logo{flex:0 0 auto;background:#fff;border-radius:12px;padding:10px 16px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.hero-logo img{height:42px;width:auto;display:block}
+.hero-text{flex:1;min-width:0;position:relative;z-index:1}
+.hero::after{content:'';position:absolute;right:-60px;top:-60px;width:200px;height:200px;background:#009FE3;opacity:.18;border-radius:50%}
+.hero .kick{display:inline-block;background:#009FE3;color:#fff;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-radius:30px}
+.hero h1{font-size:30px;font-weight:800;margin:12px 0 6px;line-height:1.15}
+.hero h1 b{color:#F2A900}
+.hero p{font-size:15px;color:#cfdcee;max-width:560px}
+.card{background:#fff;border-radius:16px;box-shadow:0 6px 20px rgba(0,36,87,.07);border:1px solid #e3e9f1;padding:22px 24px;margin:18px 0}
+.req{border-left:5px solid #009FE3;background:#f7fafd}
+.req h3{color:#002457;font-size:16px;margin-bottom:10px}
+.req ul{list-style:none}
+.req li{position:relative;padding-left:30px;margin:8px 0;font-size:15px}
+.req li::before{content:'✓';position:absolute;left:0;top:0;width:20px;height:20px;background:#009FE3;color:#fff;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.step{display:flex;gap:18px;align-items:flex-start;margin:0 0 16px}
+.step .n{flex:0 0 auto;width:44px;height:44px;border-radius:50%;background:#009FE3;color:#fff;font-size:20px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 10px rgba(0,159,227,.35)}
+.step .body{flex:1;min-width:0}
+.step h3{color:#002457;font-size:19px;font-weight:700;margin-bottom:4px}
+.step p{font-size:15.5px;margin-bottom:0}
+.step b{color:#002457}
+.step a{color:#0079b8;font-weight:700}
+.shot{margin:12px 0 0;border-radius:12px;overflow:hidden;border:1px solid #dde4ee;box-shadow:0 4px 14px rgba(0,36,87,.08)}
+.shot img{width:100%;display:block}
+.tip{background:#002457;color:#fff;border-radius:14px;padding:16px 20px;margin:18px 0}
+.tip b{color:#F2A900}
+.tip a{color:#fff;font-weight:700;text-decoration:underline}
+.req a{color:#0079b8;font-weight:700}
+.note2{background:#fff;border:1px solid #e3e9f1;border-left:5px solid #F2A900;border-radius:14px;padding:15px 20px;margin:14px 0;font-size:15px}
+.note2 b{color:#002457}
+.note2 a{color:#0079b8;font-weight:600}
+.appbox{background:#fff;border:1px solid #e3e9f1;border-left:5px solid #002457;border-radius:14px;padding:15px 20px;margin:14px 0;font-size:15px}
+.appbox b{color:#002457}
+.applinks{margin-top:11px;display:flex;gap:10px;flex-wrap:wrap}
+.applinks a{display:inline-block;background:#002457;color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:9px 18px;border-radius:50px}
+.applinks a:hover{background:#001a40}
+.contact{background:#f7fafd;border:1px solid #e3e9f1;border-left:5px solid #009FE3;border-radius:14px;padding:18px 22px;margin-top:18px}
+.contact h3{color:#002457;font-size:17px;margin-bottom:8px}
+.contact div{font-size:15px;margin:4px 0}
+.contact b{color:#002457}
+.contact a{color:#0079b8;font-weight:600}
+.foot{text-align:center;color:#878C8F;font-size:12px;margin-top:26px;line-height:1.6}
+.backlink{display:inline-block;margin:18px 0 0;color:#0079b8;font-weight:600;text-decoration:none;font-size:15px}
+/* HUB */
+.hub-grid{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px}
+.hub-card{flex:1;min-width:260px;background:#fff;border:1px solid #e3e9f1;border-radius:18px;box-shadow:0 6px 20px rgba(0,36,87,.07);padding:26px;text-decoration:none;color:#33414f;transition:transform .15s,box-shadow .15s;display:block}
+.hub-card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(0,36,87,.14)}
+.hub-card .ic{width:54px;height:54px;border-radius:14px;background:#009FE3;color:#fff;font-size:26px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.hub-card h2{color:#002457;font-size:21px;margin-bottom:6px}
+.hub-card p{font-size:14.5px;color:#33414f}
+.hub-card .go{display:inline-block;margin-top:14px;color:#0079b8;font-weight:700;font-size:14.5px}
+.hub-card .btns{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+.hub-card .btns a{display:inline-block;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:50px}
+.hub-card .btns .guide{background:#009FE3;color:#fff}
+.hub-card .btns .video{background:#fff;color:#002457;border:2px solid #009FE3}
+.hub-extra{text-align:center;margin-top:22px}
+.hub-extra a{color:#0079b8;font-weight:600;text-decoration:none;font-size:15px}
+@media (max-width:620px){.hero{flex-direction:column;align-items:flex-start;gap:14px}.hero h1{font-size:25px}.step{gap:12px}.step .n{width:38px;height:38px;font-size:17px}}
+@media print{
+  body{background:#fff;font-size:12pt}
+  header.top{position:static;box-shadow:none}
+  .hero{border-radius:0}
+  .card,.hub-card{box-shadow:none;break-inside:avoid}
+  .step{break-inside:avoid}
+  .shot{box-shadow:none}
+}
+</style></head><body>
+<div class="hero"><div class="hero-logo"><img src="img/cotrab-logo.png" alt="CO.TR.A.B."></div><div class="hero-text"><h1>Acquista il <b>biglietto</b> online</h1></div></div>
+<div class="wrap">
+  
+  <div class="card"><div class="step"><div class="n">1</div><div class="body"><h3>Apri la biglietteria e scegli «Biglietto»</h3><p>Vai su <b><a href="https://biglietteria.cotrab.it/">biglietteria.cotrab.it</a></b> e fai clic su <b>VAI AL SERVIZIO</b> sotto la voce <b>BIGLIETTO</b>.</p><div class="shot"><img src="img/big-1-servizio.png" alt="Apri la biglietteria e scegli «Biglietto»"></div></div></div>
+<div class="step"><div class="n">2</div><div class="body"><h3>Inserisci i dati della corsa</h3><p>Indica <b>comune di partenza</b> e <b>di arrivo</b>, la <b>fermata</b> di salita e di discesa, la <b>data</b> e l'<b>orario</b>. Poi fai clic su <b>CERCA CORSA</b>.</p><div class="shot"><img src="img/big-2-ricerca.png" alt="Inserisci i dati della corsa"></div></div></div>
+<div class="step"><div class="n">3</div><div class="body"><h3>Scegli la corsa e aggiungila al carrello</h3><p>Dall'elenco scegli la corsa che preferisci, fai clic su <b>AGGIUNGI</b> e apri il <b>CARRELLO</b>.</p><div class="shot"><img src="img/big-3-carrello.png" alt="Scegli la corsa e aggiungila al carrello"></div></div></div>
+<div class="step"><div class="n">4</div><div class="body"><h3>Procedi al pagamento</h3><p>Verifica il riepilogo del viaggio e fai clic su <b>PAGA ORA</b>.</p><div class="shot"><img src="img/big-4-pagaora.png" alt="Procedi al pagamento"></div></div></div>
+<div class="step"><div class="n">5</div><div class="body"><h3>Inserisci i tuoi dati</h3><p>Compila <b>nome</b>, <b>email</b> (due volte, per conferma) e <b>telefono</b>, accetta i <b>Termini e Condizioni</b> e fai clic su <b>AVANTI</b>.</p><div class="shot"><img src="img/big-5-dati.png" alt="Inserisci i tuoi dati"></div></div></div>
+<div class="step"><div class="n">6</div><div class="body"><h3>Completa il pagamento</h3><p>Fai clic su <b>PROCEDI</b> e completa il pagamento per concludere l'acquisto.</p></div></div>
+</div>
+  <div class="note2"><b>&#128161; Suggerimento &mdash; salva i tuoi dati.</b> Dopo aver effettuato il <b>login</b> allo shop, registra una volta i tuoi dati in <b>Area Utente &rarr; I miei dati</b>: cos&igrave; non dovrai reinserirli a ogni acquisto.</div>
+  <div class="appbox"><b>&#128241; Preferisci lo smartphone?</b> Puoi acquistare anche dall'app gratuita <b>CO.TR.A.B.</b><div class="applinks"><a href="https://play.google.com/store/apps/details?id=itineris.basilicata.cotrab.it">Scarica per Android</a><a href="https://apps.apple.com/it/app/cotrab/id1628539580">Scarica per iPhone</a></div></div>
+  <div class="contact">
+  <h3>Hai bisogno di aiuto?</h3>
+  <div><b>Telefono:</b> <a href="tel:+390971471996">+39 0971 471996</a> (lun–ven 8:00–13:00)</div>
+  <div><b>Email:</b> <a href="mailto:posta@cotrab.it">posta@cotrab.it</a> &nbsp;•&nbsp; <b>Web:</b> <a href="https://www.cotrab.it">www.cotrab.it</a></div>
+  <div><b>Tessera MyCard:</b> <a href="https://mycard.cotrab.eu/">mycard.cotrab.eu</a></div>
+</div>
+<div class="foot">CO.TR.A.B. – Consorzio Trasporti Aziende Basilicata • Via Appia 185, 85100 Potenza (PZ) • P.IVA 01587670769</div>
+  <a class="backlink" href="index.html">← Torna alla scelta delle guide</a>
+</div></body></html>
